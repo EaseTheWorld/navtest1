@@ -6,7 +6,7 @@ import com.example.common.nav.Dashboard
 import com.example.common.nav.NavNode
 import javax.inject.Inject
 
-internal class DashboardNavNode @Inject constructor(): NavNode {
+internal class DashboardNavNode @Inject constructor(): NavNode<NavGraphBuilder> {
     override fun NavGraphBuilder.add() {
         fragment<DashboardFragment, Dashboard>()
     }

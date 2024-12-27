@@ -1,5 +1,6 @@
 package com.example.home
 
+import androidx.navigation.NavGraphBuilder
 import com.example.common.nav.NavNode
 import dagger.Binds
 import dagger.Module
@@ -12,5 +13,5 @@ import dagger.multibindings.IntoSet
 internal interface HomeModule {
     @IntoSet
     @Binds
-    fun bindNavigationNode(impl: HomeNavNode): NavNode
+    fun bindNavNode(impl: HomeNavNode): NavNode<NavGraphBuilder>
 }

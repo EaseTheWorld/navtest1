@@ -1,5 +1,6 @@
 package com.example.mylibrary.dashboard
 
+import androidx.navigation.NavGraphBuilder
 import com.example.common.nav.NavNode
 import dagger.Binds
 import dagger.Module
@@ -12,5 +13,5 @@ import dagger.multibindings.IntoSet
 internal interface DashboardModule {
     @IntoSet
     @Binds
-    fun bindNavigationNode(impl: DashboardNavNode): NavNode
+    fun bindNavNode(impl: DashboardNavNode): NavNode<NavGraphBuilder>
 }
