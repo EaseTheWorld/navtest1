@@ -23,3 +23,4 @@ rootProject.name = "navtest1"
 include(":app")
 include(":dashboard")
 include(":home")
+include(":common:nav")

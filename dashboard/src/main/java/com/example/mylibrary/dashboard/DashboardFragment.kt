@@ -29,10 +29,9 @@ class DashboardFragment : Fragment() {
     _binding = FragmentDashboardBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
-//    val route = findNavController().getBackStackEntry<Dashboard>().toRoute<Dashboard>()
     val textView: TextView = binding.textDashboard
     dashboardViewModel.text.observe(viewLifecycleOwner) {
-      textView.text = "$it"
+      textView.text = it
     }
     return root
   }

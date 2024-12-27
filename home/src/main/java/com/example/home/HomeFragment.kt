@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavDeepLinkRequest
 import androidx.navigation.fragment.findNavController
+import com.example.common.nav.Dashboard
 import com.example.home.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -35,12 +36,13 @@ private var _binding: FragmentHomeBinding? = null
       textView.text = it
     }
       binding.button1.setOnClickListener {
+          findNavController().navigate(Dashboard("test"))
 //          findNavController().navigate(Dashboard("test"))
 //          findNavController().navigate(R.id.navigation_dashboard)
-          val request = NavDeepLinkRequest.Builder
-              .fromUri("navtest1://dashboard".toUri())
-              .build()
-          findNavController().navigate(request)
+//          val request = NavDeepLinkRequest.Builder
+//              .fromUri("navtest1://dashboard".toUri())
+//              .build()
+//          findNavController().navigate(request)
       }
     return root
   }
