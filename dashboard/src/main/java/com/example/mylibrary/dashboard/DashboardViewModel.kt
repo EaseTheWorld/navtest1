@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.navigation.toRoute
-import com.example.common.nav.Dashboard
+import com.example.dashboard.route.Dashboard
 
 class DashboardViewModel(
     savedStateHandle: SavedStateHandle

@@ -8,7 +8,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.createGraph
 import androidx.navigation.fragment.NavHostFragment
 import com.example.common.nav.NavNode
-import com.example.common.nav.Home
+import com.example.home.route.Home
 import com.example.navtest1.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
