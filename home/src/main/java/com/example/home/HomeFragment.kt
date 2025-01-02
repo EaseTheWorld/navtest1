@@ -34,7 +34,10 @@ private var _binding: FragmentHomeBinding? = null
       textView.text = it
     }
       binding.button1.setOnClickListener {
-          findNavController().navigate(Dashboard("test"))
+          findNavController().navigate(Dashboard("button1"))
+      }
+      binding.button2.setOnClickListener {
+          findNavController().navigate(Dashboard("button2"))
       }
     return root
   }
