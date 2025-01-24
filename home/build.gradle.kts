@@ -49,6 +49,7 @@ dependencies {
     ksp(libs.hilt.compiler)
     implementation(project(":common:nav"))
     testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutine)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
